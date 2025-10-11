@@ -125,8 +125,8 @@ CatchTheFruit::~CatchTheFruit() {
 }
 
 bool CatchTheFruit::loadFont() {
-    if (!font.loadFromFile("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")) {
-        if (!font.loadFromFile("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf")) {
+    if (!font.loadFromFile("assets/fonts/DejaVuSans.ttf")) {
+        if (!font.loadFromFile("assets/fonts/LiberationSans-Regular.ttf")) {
             std::cout << "Could not load system fonts" << std::endl;
             return false;
         }

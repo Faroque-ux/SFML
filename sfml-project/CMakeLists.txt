@@ -4,6 +4,8 @@ project(sfml-project)
 
 set(CMAKE_CXX_STANDARD 11)
 
+file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
+
 find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
 include_directories(src/headers)

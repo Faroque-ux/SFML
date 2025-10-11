@@ -5,6 +5,7 @@
 #include <SFML/Audio.hpp>
 #include <vector>
 #include <string>
+#include "GameFactory.h"
 
 struct Fruit {
     sf::CircleShape shape;
@@ -32,7 +33,7 @@ enum GameState {
     GAME_OVER
 };
 
-class CatchTheFruit {
+class CatchTheFruit : public IGame {
 private:
     sf::RenderWindow window;
     GameState gameState;
@@ -71,7 +72,7 @@ private:
 public:
     CatchTheFruit();
     ~CatchTheFruit();
-    void run();
+    void run() override;
 };
 
 #endif // CATCHTHEFRUIT_H
