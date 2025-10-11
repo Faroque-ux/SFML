@@ -1,0 +1,3 @@
+/home/faroque_ubuntu/SFML/sfml-project/build/CMakeFiles/sfml-project.dir
+/home/faroque_ubuntu/SFML/sfml-project/build/CMakeFiles/edit_cache.dir
+/home/faroque_ubuntu/SFML/sfml-project/build/CMakeFiles/rebuild_cache.dir
