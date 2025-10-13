@@ -17,8 +17,6 @@ private:
     MenuButton* startButton;
     sf::RenderWindow window;
     sf::RectangleShape ground;
-    //sf::RectangleShape player;
-    //sf::RectangleShape obstacle;
     sf::Font font;
     sf::Text scoreText;
     int score;
