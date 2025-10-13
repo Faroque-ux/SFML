@@ -16,6 +16,7 @@ if (!font.loadFromFile("assets/fonts/DejaVuSans.ttf")) {
 
     MenuButton btn1(250, 200, 300, 60, "Catch The Fruit", font);
     MenuButton btn2(250, 300, 300, 60, "Float And Place", font);
+    MenuButton btn3(250, 400, 300, 60, "Jumping Animal", font);
 
     bool gameSelected = false;
     int selectedGame = 0;
@@ -35,6 +36,10 @@ if (!font.loadFromFile("assets/fonts/DejaVuSans.ttf")) {
                     selectedGame = 2;
                     gameSelected = true;
                 }
+                if (btn3.isClicked(mousePos)) {
+                    selectedGame = 3;
+                    gameSelected = true;
+                }
             }
         }
 
@@ -48,6 +53,7 @@ if (!font.loadFromFile("assets/fonts/DejaVuSans.ttf")) {
 
         btn1.draw(window);
         btn2.draw(window);
+        btn3.draw(window);
 
         window.display();
     }
